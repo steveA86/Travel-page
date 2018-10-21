@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Travel and Tourism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Tangerine|Bree+Serif|Domine');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Bree Serif', serif;
+            box-sizing: border-box;
+        }
+
+        #container {
+            background: url(./imgs/bgred.jpg) no-repeat center 60%;
+            max-width: 100%;
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: rgba(158, 156, 149, 0.75);
+            position: relative;
+            width: 100%;
+            display: block;
+
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: right;
+            margin: 0 50px 0 0;
+            padding: 0;
+        }
+
+        nav li {
+            padding: 5px 10px 5px 10px;
+            display: inline-block;
+        }
+
+        a {
+            padding: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+
+        }
+        
+        main {
+            margin: 10% auto 0;
+            text-align: center;
+            position: relative;
+            
+        }
+        h1 {
+            font-size: 100px;
+            font-family: Tangerine;
+            text-shadow: 4px 4px 4px #aaa;
+           
+        }
+        h1, h2 {
+            margin:10px;
+        }
+        h2{
+            font-family: 'Domine';
+            font-size: 20px;
+        }
+        input[type=text],input[type=submit], select{
+            width:20%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            margin-right: 15px;
+            resize: horizontal;
+            
+            }
+            input[type=submit] {
+            background-color: rgb(245, 46, 11);
+            border: 1px solid rgb(245, 46, 11);
+            color: white;
+            cursor: pointer;
+            }
+            input[type=submit]:hover, a:hover{
+                background-color:rgb(243, 20, 12)
+            }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Lifestyle</a></li>
+                <li>
+                    <a href="#">Tours</a></li>
+                <li>
+                    <a href="#">Booking</a></li>
+                <li>
+                    <a href="#">Destinations</a>
+                </li>
+                <li>
+                    <a href="#">Souvenirs</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Where do you want to go?</h1>
+            <h2>Trips, experiences,and places.All in one sevice.</h2>
+            <form name="form1" action="submitSearch" method="POST">
+                <input type="text" id="dest" name="destination" placeholder="Destination, city">
+                <input type="text" id="mon" name="date" placeholder="Month">
+                <select id="trip" name="trip_type">
+                    <option value="car">Car Trip</option>
+                    <option value="bicycle">Bicycle Trip</option>
+                    <option value="plane">Plane Trip</option>
+                </select>
+                <input type="submit" id="search-btn" value="Search">
+
+            </form>
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>
